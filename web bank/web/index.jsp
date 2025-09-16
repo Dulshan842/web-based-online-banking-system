@@ -1,16 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Randy Mordred
-  Date: 9/16/2025
-  Time: 6:00 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+<form action="main" method="post">
+  <button name="page" value="scheduled">Scheduled Transactions</button>
+  <button name="page" value="create">Create Transaction</button>
+  <button name="page" value="paybill">Pay Bills</button>
+</form>
+
