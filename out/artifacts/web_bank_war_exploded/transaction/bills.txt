@@ -1,3 +1,0 @@
-Electricity,5000
-Electricity,2000
-Electricity,5000
