@@ -11,7 +11,7 @@ public class ScheduledTransaction {
 
     public static void deleteTransaction(ServletContext context, String id, String date) throws IOException {
         // Resolve the real path inside Tomcat's deployed context
-        String realPath = context.getRealPath("/transactions/scheduled.txt");
+        String realPath = context.getRealPath("C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system/web bank/web/scheduled.txt");
         Path path = Paths.get(realPath);
 
         // Read all lines from the file

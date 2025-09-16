@@ -9,7 +9,8 @@ public class CreateTransaction {
 
     public static void saveTransaction(ServletContext context, String acc, String amt, String date, String name, String bank, String reason) throws IOException {
         // Resolve the real path inside Tomcat's deployed webapp
-        String realPath = context.getRealPath("/transaction/created.txt");
+        String realPath = context.getRealPath("C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system/web bank/web/created.txt");
+
         Path path = Paths.get(realPath);
 
         // Ensure parent directory exists
