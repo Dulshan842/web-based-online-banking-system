@@ -60,7 +60,7 @@ public class MainServelet extends HttpServlet {
                 break;
 
             case "confirm":
-                res.sendRedirect("index.jsp");
+                req.getRequestDispatcher("/WEB-INF/it24104176/success.jsp").forward(req, res); // ✅ Forward to success
                 break;
 
             default:
