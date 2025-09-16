@@ -53,7 +53,7 @@
         </thead>
         <tbody>
             <%
-                Path path = Paths.get("C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system/web bank/web/scheduled.txt");
+                Path path = Paths.get("C:/Users/Randy Mordred/Desktop/IT24104176/se/web-based-online-banking-system/web bank/web/scheduled.txt");
                 if (Files.exists(path)) {
                     List<String> lines = Files.readAllLines(path);
                     for (String line : lines) {

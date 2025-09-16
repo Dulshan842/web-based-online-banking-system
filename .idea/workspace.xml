@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web bank:war exploded" />
+      <artifact name="web bank:Web exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176" />
+    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/scheduled.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/scheduled.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/scheduled.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/scheduled.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/scheduled.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/scheduled.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web bank/web/scheduled.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web bank/web/scheduled.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +87,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.44.executor": "Run",
     "Tomcat Server.Tomcat 9.0.104.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "IT24104176---Fund__Transfers__and__Bill__Payments",
     "last_opened_file_path": "C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -88,7 +95,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system/web bank/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21494253",
     "settings.editor.selected.configurable": "preferences.applicationServers",
@@ -99,9 +106,9 @@
     <configuration name="Tomcat 9.0.104" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.104" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web bank:war exploded">
+        <artifact name="web bank:Web exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/web_bank_war_exploded" />
+            <option name="CONTEXT_PATH" value="/web_bank_Web_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -180,6 +187,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="web bank:war exploded" />
+          <artifact name="web bank:Web exploded" />
         </option>
       </method>
     </configuration>
