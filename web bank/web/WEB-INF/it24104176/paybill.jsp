@@ -74,7 +74,7 @@
             </select>
         </div>
         <div class="col-md-6">
-            <label class="form-label">Amount</label>
+            <label class="form-label">Amount IN LKR</label>
             <input type="number" name="amt" class="form-control" required>
         </div>
         <div class="col-12">

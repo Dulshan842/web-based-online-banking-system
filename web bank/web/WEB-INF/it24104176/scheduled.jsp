@@ -66,7 +66,7 @@
             <tr>
                 <td><%= id %></td>
                 <td><%= date %></td>
-                <td>$<%= amt %></td>
+                <td>LKR <%= amt %></td>
                 <td>
                     <form action="main" method="post">
                         <input type="hidden" name="page" value="scheduled">

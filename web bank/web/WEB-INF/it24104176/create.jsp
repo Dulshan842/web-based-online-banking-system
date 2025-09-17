@@ -69,7 +69,7 @@
             <input type="text" name="acc" class="form-control" required>
         </div>
         <div class="col-md-6">
-            <label class="form-label">Amount</label>
+            <label class="form-label">Amount in LKR</label>
             <input type="number" name="amt" class="form-control" required>
         </div>
         <div class="col-md-6">

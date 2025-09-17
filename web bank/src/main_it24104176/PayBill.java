@@ -17,7 +17,7 @@ public class PayBill {
         Files.createDirectories(path.getParent());
 
         // Construct the bill line
-        String line = type + "," + amt;
+        String line = type + "," + amt ;
 
         // Write to file (create if missing, append if exists)
         Files.write(path, List.of(line), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
