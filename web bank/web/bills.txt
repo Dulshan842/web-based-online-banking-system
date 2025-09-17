@@ -2,3 +2,4 @@ Electricity,5000
 Electricity,5000
 Internet,7800
 Electricity,200
+Water,1200
