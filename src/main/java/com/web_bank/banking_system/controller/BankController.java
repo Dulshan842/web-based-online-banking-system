@@ -1,41 +1,49 @@
 package com.web_bank.banking_system.controller;
 
 import com.web_bank.banking_system.entity.Bill;
+import com.web_bank.banking_system.entity.Schedule;
 import com.web_bank.banking_system.entity.Transaction;
 import com.web_bank.banking_system.repository.BillRepository;
+import com.web_bank.banking_system.service.ScheduleService;
 import com.web_bank.banking_system.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.util.List;
 
-@RestController
+@Controller
 @RequestMapping("/api")
 public class BankController {
 
-    @Autowired private TransactionRepository transactionRepo;
-    @Autowired private BillRepository billRepo;
+    @Autowired
+    private TransactionRepository transactionRepo;
+    @Autowired
+    private BillRepository billRepo;
+    @Autowired
+    private ScheduleService scheduleService;
 
-    @PostMapping("/transaction")
-    public ResponseEntity<String> saveTransaction(@RequestBody Transaction tx) {
-        transactionRepo.save(tx);
-        return ResponseEntity.ok("Transaction saved");
-    }
 
     @PostMapping("/bill")
-    public ResponseEntity<String> saveBill(@RequestBody Bill bill) {
+    public String saveBill(@ModelAttribute Bill bill) {
         billRepo.save(bill);
-        return ResponseEntity.ok("Bill saved");
+        return "redirect:/success";
     }
 
-    @DeleteMapping("/scheduled")
-    public ResponseEntity<String> deleteScheduled(@RequestParam String acc, @RequestParam String date) {
-        LocalDate d = LocalDate.parse(date);
-        List<Transaction> scheduled = transactionRepo.findByAccAndDateAndType(acc, d, "scheduled");
-        transactionRepo.deleteAll(scheduled);
-        return ResponseEntity.ok("Scheduled transaction deleted");
+    @PostMapping("/transaction")
+    public String saveTransaction(@ModelAttribute Transaction tx) {
+        transactionRepo.save(tx);
+        return "redirect:/success";
+
     }
+
+    @GetMapping("/scheduled")
+    public String showScheduleForm(Model model) {
+        model.addAttribute("scheduleTx", new Schedule());
+        return "scheduled";
+    }
+
+
+
 }
-

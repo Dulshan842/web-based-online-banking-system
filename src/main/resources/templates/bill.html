@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay a Bill</title>
+    <style>
+        /* Same styling as index.html */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(to bottom right, #0f0f0f, #1c1c1c);
+            color: #e0e0e0;
+        }
+
+        header, footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #333;
+            color: #00aaff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, button {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        input {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        button {
+            background: linear-gradient(to right, #0077cc, #005fa3);
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 170, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+<header><h1>Pay a Bill</h1></header>
+
+<div class="container">
+    <form action="/api/bill" method="post">
+        <input name="type" placeholder="Bill Type" required />
+        <input name="amt" placeholder="Amount" required />
+        <button type="submit">Submit Payment</button>
+    </form>
+</div>
+
+<footer>&copy; 2025 WebBank</footer>
+</body>
+</html>

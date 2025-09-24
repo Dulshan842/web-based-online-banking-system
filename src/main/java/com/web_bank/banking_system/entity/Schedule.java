@@ -1,18 +1,11 @@
 package com.web_bank.banking_system.entity;
 
-import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "Transactions")
-public class Transaction {
+public class Schedule {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private String acc;
     private BigDecimal amt;
     private LocalDate date;
@@ -21,19 +14,7 @@ public class Transaction {
     private String reason;
     private String type;
 
-    @Column(name = "CreatedAt", insertable = false, updatable = false)
-    private LocalDateTime createdAt;
-
-    //  Add getters and setters
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    // You can also generate all getters/setters:
+    // Getters and setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
@@ -42,6 +23,9 @@ public class Transaction {
 
     public BigDecimal getAmt() { return amt; }
     public void setAmt(BigDecimal amt) { this.amt = amt; }
+
+    public LocalDate getDate() { return date; }
+    public void setDate(LocalDate date) { this.date = date; }
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
@@ -54,10 +38,5 @@ public class Transaction {
 
     public String getType() { return type; }
     public void setType(String type) { this.type = type; }
-
-    public LocalDateTime getCreatedAt() { return createdAt; }
-    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 }
-
-
 

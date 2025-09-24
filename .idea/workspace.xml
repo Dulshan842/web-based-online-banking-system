@@ -9,7 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176" />
+    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/ScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Schedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/service/ScheduleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/bill.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/scheduled.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/transaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/BankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -81,10 +102,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.BankingSystemApplicationTests.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BankingSystemApplication.executor": "Run",
     "Tomcat Server.Tomcat 10.1.44.executor": "Run",
     "Tomcat Server.Tomcat 9.0.104.executor": "Run",
     "git-widget-placeholder": "IT24104176---Fund__Transfers__and__Bill__Payments",
@@ -95,26 +123,52 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system/web bank/src/Main.java",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21494253",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BankingSystemApplication">
+    <configuration name="BankingSystemApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.web_bank.banking_system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.web_bank.banking_system" />
+      <option name="MAIN_CLASS_NAME" value="com.web_bank.banking_system.BankingSystemApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="BankingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-25" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="banking-system" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.web_bank.banking_system.BankingSystemApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BankingSystemApplicationTests" />
+      <item itemvalue="Spring Boot.BankingSystemApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BankingSystemApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -139,7 +193,7 @@
       <workItem from="1758048286652" duration="492000" />
       <workItem from="1758050768797" duration="330000" />
       <workItem from="1758086948569" duration="2482000" />
-      <workItem from="1758739639617" duration="2277000" />
+      <workItem from="1758739639617" duration="17993000" />
     </task>
     <task id="LOCAL-00001" summary="IT24104176">
       <option name="closed" value="true" />
@@ -261,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758741941906</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="IT24104176">
+      <option name="closed" value="true" />
+      <created>1758741963193</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1758741963193</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +351,11 @@
           <url>file://$PROJECT_DIR$/web bank/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/web_bank/banking_system/BankingSystemApplicationTests.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

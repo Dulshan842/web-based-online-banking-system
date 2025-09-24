@@ -1,0 +1,62 @@
+body.gradient-bg {
+    background: linear-gradient(to bottom right, #1e1e2f, #2c2c3c);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2a2a3a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+}
+
+.title {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1f1f2f;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    color: #ccc;
+}
+
+.styled-table tr:hover {
+    background-color: #333;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.form-box input, .form-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
