@@ -9,79 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/BankController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/repository/BillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/repository/TransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_bank.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_bank_Web_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.jms.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.resource.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.transaction.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank/WEB-INF/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank/WEB-INF/classes/main_it24104176/CreateTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank/WEB-INF/classes/main_it24104176/MainServelet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank/WEB-INF/classes/main_it24104176/PayBill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank/WEB-INF/classes/main_it24104176/ScheduledTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/classes/main_it24104176/CreateTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/classes/main_it24104176/MainServelet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/classes/main_it24104176/PayBill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/classes/main_it24104176/ScheduledTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/paybill.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/scheduled.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/it24104176/verify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/bills.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/created.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_Web_exploded/scheduled.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_war_exploded/WEB-INF/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_war_exploded/WEB-INF/classes/main_it24104176/CreateTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_war_exploded/WEB-INF/classes/main_it24104176/MainServelet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_war_exploded/WEB-INF/classes/main_it24104176/PayBill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_bank_war_exploded/WEB-INF/classes/main_it24104176/ScheduledTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/web bank/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/web bank/main_it24104176/CreateTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/web bank/main_it24104176/MainServelet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/web bank/main_it24104176/PayBill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/web bank/main_it24104176/ScheduledTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/src/main_it24104176/CreateTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/src/main_it24104176/MainServelet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/src/main_it24104176/PayBill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/src/main_it24104176/ScheduledTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web bank.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/paybill.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/scheduled.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/it24104176/verify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/bills.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/created.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web bank/web/scheduled.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +139,7 @@
       <workItem from="1758048286652" duration="492000" />
       <workItem from="1758050768797" duration="330000" />
       <workItem from="1758086948569" duration="2482000" />
-      <workItem from="1758739639617" duration="1934000" />
+      <workItem from="1758739639617" duration="2277000" />
     </task>
     <task id="LOCAL-00001" summary="IT24104176">
       <option name="closed" value="true" />
@@ -317,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758087999155</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="IT24104176">
+      <option name="closed" value="true" />
+      <created>1758741729997</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758741729997</updated>
+    </task>
+    <task id="LOCAL-00015" summary="IT24104176">
+      <option name="closed" value="true" />
+      <created>1758741941906</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1758741941906</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
