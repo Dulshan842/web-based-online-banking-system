@@ -6,41 +6,29 @@
     <title>Schedule Transaction</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(to bottom right, #0f0f0f, #1c1c1c);
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, rgba(81, 108, 255, 0.68), #389dc1);
             color: #e0e0e0;
+            padding: 40px;
         }
-        header {
-            background-color: #1a1a1a;
-            padding: 20px;
+        h1 {
+            color: #ffffff;
             text-align: center;
-            border-bottom: 1px solid #333;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            color: #00aaff;
         }
         .container {
             max-width: 600px;
-            margin: 60px auto;
-            padding: 20px;
+            margin: 0 auto;
             background-color: #2a2a2a;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
         }
-        .container h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #00aaff;
-        }
-        form label {
+        label {
             display: block;
             margin-top: 15px;
-            font-weight: 500;
+            font-weight: bold;
         }
-        form input, form textarea, form select {
+        input, textarea, select {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
@@ -48,17 +36,6 @@
             border: none;
             border-radius: 6px;
             color: #e0e0e0;
-        }
-        .info-box {
-            background-color: #1c1c1c;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-        .info-box p {
-            margin: 10px 0;
-            font-size: 1rem;
-            color: #ccc;
         }
         button {
             margin-top: 20px;
@@ -81,8 +58,7 @@
     <h1>Schedule Transaction</h1>
 </header>
 <div class="container">
-    <h2> Enter Transaction Details</h2>
-    <form action="/schedule" method="post">
+    <form action="/api/schedule" method="post">
         <label for="acc">Account Number</label>
         <input type="text" id="acc" name="acc" required />
 
@@ -109,27 +85,6 @@
 
         <button type="submit">Schedule Transaction</button>
     </form>
-
-    <div th:if="${scheduledTx != null}" class="info-box">
-        <h2>Scheduled Preview</h2>
-        <p><strong>Account:</strong> <span th:text="${scheduledTx.acc}"></span></p>
-        <p><strong>Amount:</strong> ₹<span th:text="${scheduledTx.amt}"></span></p>
-        <p><strong>Date:</strong> <span th:text="${scheduledTx.date}"></span></p>
-        <p><strong>Name:</strong> <span th:text="${scheduledTx.name}"></span></p>
-        <p><strong>Bank:</strong> <span th:text="${scheduledTx.bank}"></span></p>
-        <p><strong>Reason:</strong> <span th:text="${scheduledTx.reason}"></span></p>
-        <p><strong>Type:</strong> <span th:text="${scheduledTx.type}"></span></p>
-
-        <form action="/confirmSchedule" method="post">
-            <input type="hidden" name="id" th:value="${scheduledTx.id}" />
-            <button type="submit"> Confirm Schedule</button>
-        </form>
-
-        <form action="/cancelSchedule" method="post">
-            <input type="hidden" name="id" th:value="${scheduledTx.id}" />
-            <button type="submit"> Delete Scheduled Transaction</button>
-        </form>
-    </div>
 </div>
 </body>
 </html>

@@ -15,7 +15,7 @@ public class TransactionController {
     @PostMapping("/createTransaction")
     public String createTransaction(@ModelAttribute Transaction tx) {
         transactionRepository.save(tx);
-        return "redirect:/transactions";
+        return "redirect:/success";
     }
 
     @GetMapping("/ping")
