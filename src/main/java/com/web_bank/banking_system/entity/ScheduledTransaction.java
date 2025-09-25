@@ -6,16 +6,25 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+
+
+
+
+
 @Entity
 @Table(name = "ScheduledTransactions")
 public class ScheduledTransaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+
     private int id;
 
     private String acc;
     private BigDecimal amt;
+
+
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;

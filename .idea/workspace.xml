@@ -10,23 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/repository/ScheduledTransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/service/ScheduledTransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/schedule.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankDB/BankDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankDB/BankDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/BankController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/ScheduleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/ScheduledTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/service/ScheduleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/ScheduledTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/ScheduledTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/entity/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/bill.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/bill.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/schedule.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/scheduled.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/scheduled.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/transaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/transaction.html" afterDir="false" />
     </list>
@@ -194,7 +184,7 @@
       <workItem from="1758050768797" duration="330000" />
       <workItem from="1758086948569" duration="2482000" />
       <workItem from="1758739639617" duration="18129000" />
-      <workItem from="1758779925099" duration="14121000" />
+      <workItem from="1758779925099" duration="16457000" />
     </task>
     <task id="LOCAL-00001" summary="IT24104176">
       <option name="closed" value="true" />
@@ -332,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758758152601</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="IT24104176">
+      <option name="closed" value="true" />
+      <created>1758794255995</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1758794255996</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
