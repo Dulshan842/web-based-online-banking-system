@@ -48,6 +48,21 @@ public class BankController {
         return success ? "redirect:/schedule" : "redirect:/schedule?error=true";
     }
 
+    @GetMapping("/editScheduled/{id}")
+    public String editScheduled(@PathVariable int id, Model model) {
+        ScheduledTransaction tx = scheduledService.getById(id).orElseThrow();
+        model.addAttribute("scheduleTx", tx); // ✅ Must match th:object
+        return "edit-scheduled";
+    }
+
+
+    @PostMapping("/updateSchedule")
+    public String updateSchedule(@ModelAttribute ScheduledTransaction tx) {
+        scheduledService.save(tx);
+        return "redirect:/schedule";
+    }
+
+
     @PostMapping("/bill")
     public String saveBill(@ModelAttribute Bill bill) {
         billRepo.save(bill);

@@ -22,6 +22,11 @@ public class ScheduledTransactionService {
         return repository.findAll();
     }
 
+    public Optional<ScheduledTransaction> getById(int id) {
+        return repository.findById(id);
+    }
+
+
     public boolean deleteScheduled(int id) {
         if (repository.existsById(id)) {
             repository.deleteById(id);

@@ -91,10 +91,16 @@
                 <input type="hidden" name="id" th:value="${tx.id}" />
                 <button type="submit" class="confirm">Confirm</button>
             </form>
+
+            <form th:action="@{/api/editScheduled/{id}(id=${tx.id})}" method="get">
+                <button type="submit" class="btn edit" style="background-color:#ffaa00; color:white;">Edit</button>
+            </form>
+
             <form action="/api/cancelSchedule" method="post">
                 <input type="hidden" name="id" th:value="${tx.id}" />
                 <button type="submit" class="delete">Delete</button>
             </form>
+
         </td>
     </tr>
     </tbody>

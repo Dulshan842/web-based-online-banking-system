@@ -9,7 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176" />
+    <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-scheduled.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankDB/BankDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankDB/BankDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/controller/BankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/service/ScheduledTransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/web_bank/banking_system/service/ScheduledTransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/schedule.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/scheduled.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/scheduled.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -106,7 +115,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.21494253&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -174,7 +183,20 @@
       <workItem from="1758050768797" duration="330000" />
       <workItem from="1758086948569" duration="2482000" />
       <workItem from="1758739639617" duration="18129000" />
-      <workItem from="1758779925099" duration="16647000" />
+      <workItem from="1758779925099" duration="17047000" />
+      <workItem from="1758974383946" duration="94000" />
+      <workItem from="1759165894167" duration="784000" />
+      <workItem from="1759327742299" duration="100000" />
+      <workItem from="1759343893091" duration="1499000" />
+      <workItem from="1759347698969" duration="9000" />
+      <workItem from="1759352021286" duration="959000" />
+      <workItem from="1759420319649" duration="5482000" />
+      <workItem from="1759434653185" duration="478000" />
+      <workItem from="1759488513636" duration="740000" />
+      <workItem from="1759489734284" duration="469000" />
+      <workItem from="1759490436269" duration="576000" />
+      <workItem from="1759491049591" duration="211000" />
+      <workItem from="1759493007237" duration="1900000" />
     </task>
     <task id="LOCAL-00001" summary="IT24104176">
       <option name="closed" value="true" />
@@ -328,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758796791236</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="IT24104176">
+      <option name="closed" value="true" />
+      <created>1758796820414</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1758796820414</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,5 +394,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
