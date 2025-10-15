@@ -10,8 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d093e474-eb8f-4193-acc6-78b50d1af8f6" name="Changes" comment="IT24104176">
+      <change afterPath="$PROJECT_DIR$/src/main/Design Imp/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Design Imp/web_bank_transaction_design.rar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-scheduled.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-scheduled.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,36 +84,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.BankingSystemApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BankingSystemApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.44.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.104.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;IT24104176---Fund__Transfers__and__Bill__Payments&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Randy Mordred/Desktop/IT24104176/se1/web-based-online-banking-system&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system/web bank/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.21494253&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.BankingSystemApplicationTests.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BankingSystemApplication.executor": "Run",
+    "Tomcat Server.Tomcat 10.1.44.executor": "Run",
+    "Tomcat Server.Tomcat 9.0.104.executor": "Run",
+    "git-widget-placeholder": "IT24104176---Fund__Transfers__and__Bill__Payments",
+    "last_opened_file_path": "C:/Users/Randy Mordred/Desktop/IT24104176/se1/web-based-online-banking-system",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Randy Mordred/Desktop/IT24104176/web-based-online-banking-system/web bank/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21494253",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Randy Mordred\Desktop\IT24104176\se1\web-based-online-banking-system\src\main\Design Imp" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.BankingSystemApplication">
     <configuration name="BankingSystemApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-system" />
@@ -193,7 +200,11 @@
       <workItem from="1759493007237" duration="2320000" />
       <workItem from="1759496233084" duration="166000" />
       <workItem from="1759507611943" duration="607000" />
-      <workItem from="1759611059979" duration="909000" />
+      <workItem from="1759611059979" duration="1046000" />
+      <workItem from="1760130467140" duration="364000" />
+      <workItem from="1760262378387" duration="533000" />
+      <workItem from="1760295614406" duration="374000" />
+      <workItem from="1760556009597" duration="2506000" />
     </task>
     <task id="LOCAL-00001" summary="IT24104176">
       <option name="closed" value="true" />
@@ -371,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759507952224</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="IT24104176">
+      <option name="closed" value="true" />
+      <created>1759612095024</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1759612095024</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
