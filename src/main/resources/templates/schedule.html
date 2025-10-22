@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Edit Scheduled Transactions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, rgba(81, 108, 255, 0.68), #389dc1);
+            color: #e0e0e0;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        th {
+            background-color: #1a1a1a;
+            color: #00aaff;
+        }
+        tr:hover {
+            background-color: #1c1c1c;
+        }
+        form {
+            display: inline;
+        }
+        button {
+            padding: 8px 12px;
+            margin: 2px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .confirm {
+            background-color: #0077cc;
+            color: white;
+        }
+        .delete {
+            background-color: #cc0033;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #000000;}
+    </style>
+</head>
+<body>
+<h1>Edit Scheduled Transactions</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Account</th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Bank</th>
+        <th>Type</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="tx : ${scheduledList}">
+        <td th:text="${tx.id}"></td>
+        <td th:text="${tx.acc}"></td>
+        <td th:text="${tx.amt}"></td>
+        <td th:text="${tx.date}"></td>
+        <td th:text="${tx.name}"></td>
+        <td th:text="${tx.bank}"></td>
+        <td th:text="${tx.type}"></td>
+        <td>
+            <form action="/api/confirmSchedule" method="post">
+                <input type="hidden" name="id" th:value="${tx.id}" />
+                <button type="submit" class="confirm">Confirm</button>
+            </form>
+
+            <form th:action="@{/api/editScheduled/{id}(id=${tx.id})}" method="get">
+                <button type="submit" class="btn edit" style="background-color:#ffaa00; color:white;">Edit</button>
+            </form>
+
+            <form action="/api/cancelSchedule" method="post">
+                <input type="hidden" name="id" th:value="${tx.id}" />
+                <button type="submit" class="delete">Delete</button>
+            </form>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<footer>
+    &copy; 2025 WebBank. All rights reserved.
+</footer>
+</body>
+</html>

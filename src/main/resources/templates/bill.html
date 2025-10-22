@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay a Bill</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(to bottom right, rgba(81, 108, 255, 0.68), #389dc1);
+            color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, rgba(81, 108, 255, 0.68), #389dc1);
+            color: #e0e0e0;
+            padding: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, button {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        input {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        select {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            appearance: none;
+            cursor: pointer;
+            box-shadow: 0 0 8px rgba(0, 170, 255, 0.1);
+            transition: box-shadow 0.2s ease;
+        }
+
+        select:hover {
+            box-shadow: 0 0 12px rgba(0, 170, 255, 0.3);
+        }
+
+        select:focus {
+            outline: none;
+            box-shadow: 0 0 16px rgba(0, 170, 255, 0.4);
+        }
+
+
+        button {
+            background: linear-gradient(to right, #0077cc, #005fa3);
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 170, 255, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+<header><h1>Pay a Bill</h1></header>
+
+<div class="container">
+    <form action="/api/bill" method="post">
+        <select name="type" required>
+            <option value="" disabled selected>Select Bill Type</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Water">Water</option>
+            <option value="Internet">Internet</option>
+        </select>
+
+        <input name="amt" type="number" min="0" step="0.01" placeholder="Amount" required
+               oninvalid="this.setCustomValidity('Amount must be zero or positive')"
+               oninput="this.setCustomValidity('')" />
+
+        <button type="submit">Submit Payment</button>
+    </form>
+</div>
+
+<footer> &copy; 2025 WebBank. All rights reserved.</footer>
+</body>
+</html>

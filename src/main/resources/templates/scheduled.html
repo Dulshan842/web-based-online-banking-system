@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule Transaction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom right, rgba(81, 108, 255, 0.68), #389dc1);
+            color: #e0e0e0;
+            padding: 40px;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #1c1c1c;
+            border: none;
+            border-radius: 6px;
+            color: #e0e0e0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            background: linear-gradient(to right, #0077cc, #005fa3);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            box-shadow: 0 4px 12px rgba(0, 170, 255, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #000000;}
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const dateInput = document.getElementById('date');
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1);
+            const minDate = tomorrow.toISOString().split('T')[0];
+            dateInput.min = minDate;
+        });
+    </script>
+
+</head>
+<body>
+<header>
+    <h1>Schedule Transaction</h1>
+</header>
+<div class="container">
+    <form action="/api/schedule" method="post">
+        <label for="acc">Account Number</label>
+        <input type="text" id="acc" name="acc" required />
+
+        <label for="amt">Amount in LKR</label>
+        <input id="amt" name="amt" type="number" min="0" step="0.01" placeholder="Amount" required
+               oninvalid="this.setCustomValidity('Amount must be zero or positive')"
+               oninput="this.setCustomValidity('')" />
+
+
+
+        <label for="date">Transaction Date</label>
+        <input type="date" id="date" name="date" required />
+
+
+        <label for="name">Receiver Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="bank">Receiver Bank</label>
+        <input type="text" id="bank" name="bank" required />
+
+        <label for="reason">Reason</label>
+        <textarea id="reason" name="reason"></textarea>
+
+        <label for="type">Type</label>
+        <select id="type" name="type">
+            <option value="Credit">Credit</option>
+            <option value="Debit">Debit</option>
+        </select>
+
+        <button type="submit">Schedule Transaction</button>
+    </form>
+</div>
+<footer>
+    &copy; 2025 WebBank. All rights reserved.
+</footer>
+</body>
+</html>
+

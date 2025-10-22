@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Submitted Ratings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container mt-5">
+    <h3 class="text-center"> Submitted Ratings</h3>
+    <table class="table table-bordered table-striped mt-4">
+        <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Stars</th>
+            <th>Comment</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="rating : ${ratings}">
+            <td th:text="${rating.name}">Name</td>
+            <td th:text="${rating.stars}">Stars</td>
+            <td th:text="${rating.comment}">Comment</td>
+
+
+            <td>
+                <a th:href="@{/ratings/edit/{id}(id=${rating.id})}" class="btn btn-sm btn-warning">Edit</a>
+                <form th:action="@{/ratings/delete/{id}(id=${rating.id})}" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

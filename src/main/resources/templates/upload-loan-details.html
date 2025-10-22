@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Loan</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button.danger {
+            background-color: #d83b01;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2> Edit Loan</h2>
+
+    <!-- Update Loan Form -->
+    <form action="/loan/update" method="post">
+        <input type="hidden" name="id" th:value="${loan.id}" />
+        <input type="hidden" name="userId" th:value="${loan.userId}" />
+
+        <label>Amount:</label>
+        <input type="number" name="amount" th:value="${loan.amount}" required min="0" max="30000" step="0.01">
+
+        <label>Status:</label>
+        <input type="text" name="status" th:value="${loan.status}" required>
+
+        <p><strong>Max Limit:</strong> LKR 30,000 (fixed)</p>
+
+        <button type="submit">Update Loan</button>
+    </form>
+
+    <!-- Delete Loan Form -->
+    <form th:action="@{'/loan/delete/' + ${loan.id}}" method="post">
+        <input type="hidden" name="userId" th:value="${loan.userId}" />
+        <button type="submit" class="danger"> Delete Loan</button>
+    </form>
+</div>
+</body>
+</html>

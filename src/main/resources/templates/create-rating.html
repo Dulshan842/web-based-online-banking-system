@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Rate Our Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    .star-rating input[type="radio"] { display: none; }
+    .star-rating label {
+      font-size: 2rem;
+      color: #ccc;
+      cursor: pointer;
+    }
+    .star-rating input:checked ~ label { color: #ffc107; }
+    .star-rating label:hover,
+    .star-rating label:hover ~ label { color: #ffdb70; }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <h3 class="text-center">⭐ Rate Our Service</h3>
+  <form th:action="@{/ratings/submit}" th:object="${rating}" method="post">
+
+  <!-- Name input -->
+    <div class="mb-3">
+      <input type="text" th:field="*{name}" class="form-control" placeholder="Your name" required />
+    </div>
+
+    <!-- Star rating -->
+    <div class="mb-3 text-center star-rating">
+      <input type="radio" id="star5" th:field="*{stars}" value="5" />
+      <label for="star5">★</label>
+      <input type="radio" id="star4" th:field="*{stars}" value="4" />
+      <label for="star4">★</label>
+      <input type="radio" id="star3" th:field="*{stars}" value="3" />
+      <label for="star3">★</label>
+      <input type="radio" id="star2" th:field="*{stars}" value="2" />
+      <label for="star2">★</label>
+      <input type="radio" id="star1" th:field="*{stars}" value="1" />
+      <label for="star1">★</label>
+    </div>
+
+    <!-- Comment box -->
+    <div class="mb-3">
+      <textarea th:field="*{comment}" class="form-control" rows="4" placeholder="Leave a comment..."></textarea>
+    </div>
+
+    <!-- Submit and view buttons -->
+    <div class="d-flex justify-content-between">
+      <button type="submit" class="btn btn-primary">Submit Rating</button>
+      <a th:href="@{/ratings/view}" class="btn btn-outline-secondary">View Ratings</a>
+    </div>
+  </form>
+
+</div>
+</body>
+</html>
+
