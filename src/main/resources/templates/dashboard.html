@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard | BankSystem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">BankSystem</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" th:href="@{/index}">Transactions</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/index-loan}">Loans</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/login-history(userId=${user.id})}">Login History</a>
+
+                </li>
+
+                <li class="nav-item"><a class="nav-link" th:href="@{/ratings/new}">Ratings</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/register}">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h3>Welcome, <span th:text="${user.name}">User</span></h3>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-info text-white">Account Overview</div>
+                <div class="card-body">
+                    <p><strong>Account ID:</strong> <span th:text="${user.accountId}"></span></p>
+                    <p><strong>Balance: Available</strong> </p>
+                    <p><strong>Phone:</strong> <span th:text="${user.phone}"></span></p>
+                    <p><strong>Birthday:</strong> <span th:text="${#dates.format(user.birthday, 'yyyy -MMM - dd')}"></span></p>
+                    <p><strong>Address:</strong> <span th:text="${user.address}"></span></p>
+                    <a th:href="@{/account/edit(userId=${user.id})}" class="btn btn-outline-primary btn-sm">Edit Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">Quick Actions</div>
+                <div class="card-body">
+                    <a th:href="@{/index}" class="btn btn-success w-100 mb-2">Make a Transaction</a>
+                    <a th:href="@{/index-loan}" class="btn btn-warning w-100 mb-2">Apply for Loan</a>
+                    <a th:href="@{/ratings/new}" class="btn btn-secondary w-100">Rate Our Service</a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banking Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, rgba(81, 108, 255, 0.68), #389dc1);
+      color: #e0e0e0;
+      padding: 40px;
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, rgba(81, 108, 255, 0.68), #389dc1);
+      color: #e0e0e0;
+      padding: 40px;
+    }
+
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #2a2a2a;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00aaff;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .button-group a {
+      text-decoration: none;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-radius: 8px;
+      background: linear-gradient(to right, #0077cc, #005fa3);
+      color: white;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button-group a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 170, 255, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Welcome to WebBank</h1>
+</header>
+
+<div class="container">
+  <h2>Choose an Action</h2>
+  <div class="button-group">
+    <a href="/bill"> Pay a Bill</a>
+    <a href="/transaction"> Create Transaction</a>
+    <a href="/api/scheduled">View/Scheduled Transactions</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 WebBank. All rights reserved.
+</footer>
+</body>
+</html>
